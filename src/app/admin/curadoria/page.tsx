@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { CurationCard, type PendingDocument } from '@/components/features/admin/CurationCard';
 import { PendingRepoCard } from '@/components/features/curadoria/PendingRepoCard';
-import { aprovarDocumento } from '@/app/actions/curadoriaActions'; 
+import { auditarRepositorio } from '@/app/actions/curadoriaActions'; 
 
 interface Repositorio {
   id: string;
@@ -24,25 +24,32 @@ export default async function CuradoriaPage() {
   }
 
   // ======================================================================
-  // 1. Busca e Tipagem de DOCUMENTOS (Conserta o erro da imagem)
+  // 1. Busca e Tipagem de SUBMISSÕES / DOCUMENTOS DA COMUNIDADE
   // ======================================================================
-  const { data: docsData, error: docsError } = await supabase
-    .from('documentos') // Substitua pelo nome correto da sua tabela de documentos
+  const { data: submissoesData, error: submissoesError } = await supabase
+    .from('submissoes')
     .select('*')
-    .eq('status', 'pendente');
-  
-  // O "as Documento[]" avisa ao TS exatamente o que tem dentro do array.
-  // O "|| []" garante que nunca será null, permitindo usar o .map() com segurança.
-  const documentosPendentes = (docsData as PendingDocument[]) || [];
+    .eq('status', 'pendente')
+    .order('created_at', { ascending: false });
 
+  if (submissoesError) {
+    console.error('Erro ao buscar submissões pendentes:', submissoesError);
+  }
+  
+  const documentosPendentes = (submissoesData as PendingDocument[]) || [];
 
   // ======================================================================
-  // 2. Busca e Tipagem de REPOSITÓRIOS (Nova Feature de Códigos)
+  // 2. Busca e Tipagem de REPOSITÓRIOS (Hub de Códigos)
   // ======================================================================
   const { data: reposData, error: reposError } = await supabase
     .from('repositorios')
     .select('*')
-    .eq('status', 'pendente');
+    .eq('status', 'pendente')
+    .order('created_at', { ascending: false });
+
+  if (reposError) {
+    console.error('Erro ao buscar repositórios pendentes:', reposError);
+  }
     
   const repositoriosPendentes = (reposData as Repositorio[]) || [];
 
@@ -61,22 +68,21 @@ export default async function CuradoriaPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* COLUNA ESQUERDA: Documentos */}
+          {/* COLUNA ESQUERDA: Submissões de Documentos / Iniciativas */}
           <section>
             <h2 className="text-2xl font-serif font-bold text-[#2C2D41] mb-6 flex items-center gap-2">
               <span className="w-8 h-8 bg-[#C5ADC5]/30 rounded-full flex items-center justify-center text-[#2C2D41] text-sm">📄</span>
-              Documentos ({documentosPendentes.length})
+              Submissões da Comunidade ({documentosPendentes.length})
             </h2>
             
             <div className="space-y-6">
               {documentosPendentes.length > 0 ? (
                 documentosPendentes.map((doc) => (
-                  // O TypeScript agora sabe que 'doc' é do tipo 'Documento'
                   <CurationCard key={doc.id} doc={doc} />
                 ))
               ) : (
                 <div className="p-8 text-center border border-dashed border-[#B2B5E0]/50 rounded-[2rem] bg-white text-[#2C2D41]/50 font-bold">
-                  Nenhum documento pendente.
+                  Nenhuma submissão pendente no momento.
                 </div>
               )}
             </div>
@@ -86,7 +92,7 @@ export default async function CuradoriaPage() {
           <section>
             <h2 className="text-2xl font-serif font-bold text-[#2C2D41] mb-6 flex items-center gap-2">
               <span className="w-8 h-8 bg-[#B2B5E0]/30 rounded-full flex items-center justify-center text-[#2C2D41] text-sm">💻</span>
-              Repositórios ({repositoriosPendentes.length})
+              Repositórios de Código ({repositoriosPendentes.length})
             </h2>
             
             <div className="space-y-6">
@@ -95,8 +101,7 @@ export default async function CuradoriaPage() {
                   <PendingRepoCard 
                     key={repo.id} 
                     item={repo} 
-                    // Passa a Server Action para o componente cliente
-                    onAudit={aprovarDocumento} 
+                    onAudit={auditarRepositorio} 
                   />
                 ))
               ) : (
