@@ -42,7 +42,7 @@ export async function proxy(request: NextRequest) {
       }
     } catch (error) {
       console.warn('Alerta: Erro transiente no Rate Limiting (Upstash):', error);
-      // Não bloqueia a requisição legítima caso o Redis esteja indisponível temporariamente
+        // Não bloqueia a requisição legítima caso o Redis esteja indisponível temporariamente
     }
   }
 
