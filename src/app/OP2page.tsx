@@ -1,0 +1,1 @@
+export { default } from './versoes/op2/page';
