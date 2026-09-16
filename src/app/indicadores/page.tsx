@@ -3,8 +3,8 @@ import { createClient } from '@/lib/supabase/server';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Panorama e Indicadores | NIA-UFRJ',
-  description: 'Métricas analíticas e indicadores do ecossistema de Inteligência Artificial no Brasil pelo NIA-UFRJ.',
+  title: 'Panorama e Indicadores | NIA',
+  description: 'Métricas analíticas e indicadores do ecossistema de Inteligência Artificial no Brasil pelo NIA.',
 };
 
 export const revalidate = 60; // Revalida a cada 1 minuto
@@ -51,7 +51,7 @@ export default async function IndicadoresPage() {
           </h1>
           <p className="text-lg text-[#2C2D41]/80 max-w-3xl font-light">
             Métricas analíticas consolidadas sobre o ecossistema brasileiro de Inteligência Artificial. 
-            Os indicadores combinam dados do Diretório Institucional, Acervo Acadêmico e Repositórios Open Source monitorados pelo NIA-UFRJ.
+            Os indicadores combinam dados do Diretório Institucional, Acervo Acadêmico e Repositórios Open Source monitorados pelo NIA.
           </p>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default async function IndicadoresPage() {
               <p className="text-[#2C2D41]/70 mt-1">Trajetória do volume de iniciativas e pesquisas de IA documentadas no país.</p>
             </div>
             <span className="inline-flex items-center text-xs font-bold uppercase tracking-wider bg-[#C5ADC5]/20 text-[#2C2D41] px-3.5 py-1.5 rounded-full self-start md:self-auto border border-[#C5ADC5]/30">
-              Observatório UFRJ
+              Observatório IA
             </span>
           </div>
           

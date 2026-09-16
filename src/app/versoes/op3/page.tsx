@@ -51,7 +51,7 @@ export default async function Opcao3Page() {
           </div>
           <h1 className="text-4xl md:text-6xl font-serif font-extrabold tracking-tight text-[#2C2D41] mb-6">
             Núcleo de Inteligência Artificial <br className="hidden md:block" />
-            <span className="text-[#2C2D41]">da UFRJ</span>
+            <span className="text-[#2C2D41]">do Brasil</span>
           </h1>
           <p className="mt-4 text-xl text-[#2C2D41]/80 max-w-3xl mb-10 leading-relaxed font-light">
             A referência aberta, acadêmica e institucional sobre dados, adoção tecnológica e 

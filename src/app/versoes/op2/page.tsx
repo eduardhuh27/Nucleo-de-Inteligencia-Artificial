@@ -14,7 +14,7 @@ export default function Opcao2Page() {
               A Referência Institucional sobre <span className="text-[#2C2D41]">Inteligência Artificial</span> no Brasil
             </h1>
             <p className="text-lg text-[#2C2D41]/80 mb-8 max-w-lg leading-relaxed font-light">
-              O Núcleo de Inteligência Artificial da UFRJ conecta pesquisa acadêmica, setor público e privado, oferecendo dados abertos, código e diretrizes sobre a adoção de IA no país.
+              O Núcleo de Inteligência Artificial conecta pesquisa acadêmica, setor público e privado, oferecendo dados abertos, código e diretrizes sobre a adoção de IA no país.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 

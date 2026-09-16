@@ -20,15 +20,16 @@ export function Footer() {
               >
                 n
               </div>
-              <span className="text-2xl font-serif font-bold text-[#B2B5E0] tracking-tight">NIA-UFRJ</span>
+              <span className="text-2xl font-serif font-bold text-[#B2B5E0] tracking-tight">NIA</span>
             </div>
             
             <p className="text-sm text-[#B2B5E0]/70 leading-relaxed mb-5 font-light">
-              Núcleo de Inteligência Artificial da Universidade Federal do Rio de Janeiro. 
+              Núcleo de Inteligência Artificial. 
               Mapeamento transparente, ético e de código aberto do ecossistema de IA no Brasil.
             </p>
             
             <p className="text-xs font-bold uppercase tracking-wider text-[#C5ADC5]">
+              Iniciativa acadêmica e de pesquisa aberta.
             </p>
           </div>
 
@@ -88,7 +89,7 @@ export function Footer() {
                 </li>
               ))}
               <li className="pt-2 border-t border-[#B2B5E0]/10">
-                <a href="mailto:dpo@nia.ufrj.br" className="hover:text-white transition-colors flex items-center gap-1.5 text-xs text-[#C5ADC5]">
+                <a href="mailto:dpo@nia.org.br" className="hover:text-white transition-colors flex items-center gap-1.5 text-xs text-[#C5ADC5]">
                   Contato de Dados (DPO) <span>&rarr;</span>
                 </a>
               </li>
@@ -100,10 +101,10 @@ export function Footer() {
         {/* Direitos Autorais e Avisos do Sistema */}
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-[#B2B5E0]/50 font-light gap-3">
           <p>
-            &copy; {currentYear} Núcleo de Inteligência Artificial da UFRJ (NIA-UFRJ). Todos os direitos reservados.
+            &copy; {currentYear} Núcleo de Inteligência Artificial (NIA). Todos os direitos reservados.
           </p>
           <p className="mt-2 md:mt-0 italic">
-            Os dados apresentados são para fins de pesquisa acadêmica e transparência pública.
+            Os dados apresentados são para fins de pesquisa e transparência pública.
           </p>
         </div>
         

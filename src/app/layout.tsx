@@ -15,18 +15,18 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nia-ufrj.com.br'), // Placeholder para domínio oficial
+  metadataBase: new URL('https://nia.org.br'),
   title: {
-    template: '%s | NIA-UFRJ',
-    default: 'NIA-UFRJ | Núcleo de Inteligência Artificial da UFRJ',
+    template: '%s | NIA',
+    default: 'NIA | Núcleo de Inteligência Artificial',
   },
   description: 'Referência aberta, acadêmica e institucional sobre Inteligência Artificial no Brasil.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'NIA-UFRJ',
+    title: 'NIA',
     description: 'Mapeamento ético e transparente do ecossistema de Inteligência Artificial no Brasil.',
-    url: 'https://nia-ufrj.com.br',
-    siteName: 'NIA-UFRJ',
+    url: 'https://nia.org.br',
+    siteName: 'NIA',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
     locale: 'pt_BR',
     type: 'website',
@@ -37,9 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const EducationalOrganizationSchema = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "NIA-UFRJ",
-    "url": "https://nia-ufrj.com.br",
-    "logo": "https://nia-ufrj.com.br/favicon.ico",
+    "name": "NIA",
+    "url": "https://nia.org.br",
+    "logo": "https://nia.org.br/favicon.ico",
   };
 
   return (

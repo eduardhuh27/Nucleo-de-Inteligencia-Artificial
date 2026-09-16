@@ -114,7 +114,7 @@ export default async function Home() {
           </div>
           <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-[#2C2D41] mb-6">
             Núcleo de Inteligência Artificial <br className="hidden md:block" />
-            <span className="text-[#C5ADC5]">da UFRJ</span>
+            <span className="text-[#C5ADC5]"></span>
           </h1>
           <p className="mt-4 text-xl text-[#2C2D41]/80 max-w-3xl mb-10 leading-relaxed font-light">
             A referência aberta, acadêmica e institucional sobre dados, adoção tecnológica e 
@@ -340,7 +340,7 @@ export default async function Home() {
                     <span className="w-3 h-3 rounded-full bg-yellow-400/80"></span>
                     <span className="w-3 h-3 rounded-full bg-green-400/80"></span>
                   </div>
-                  <span className="text-white/40 text-[11px] font-sans">bash — hub-nia.ufrj.br</span>
+                  <span className="text-white/40 text-[11px] font-sans">bash — hub.nia.org.br</span>
                 </div>
 
                 {/* Linhas Interativas: Repositórios Reais do Supabase (Next.js e React) com Redirecionamento */}

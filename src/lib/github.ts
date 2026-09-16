@@ -1,5 +1,3 @@
-import 'server-only'; // Garante que este arquivo nunca vaze para o bundle do cliente
-
 export interface GitHubRepoStats {
   id: number;
   name: string;
@@ -12,20 +10,35 @@ export interface GitHubRepoStats {
 }
 
 export async function getRepoStats(owner: string, repo: string): Promise<GitHubRepoStats | null> {
-  // A variável de ambiente DEVE ser GITHUB_API_TOKEN (sem NEXT_PUBLIC_)
-  const token = process.env.GITHUB_API_TOKEN;
+  const token = process.env.GITHUB_API_TOKEN?.trim();
+
+  const headers: Record<string, string> = {
+    Accept: 'application/vnd.github.v3+json',
+    'User-Agent': 'NIA-Observatorio',
+  };
+
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
+  }
 
   try {
-    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
-      headers: {
-        Accept: 'application/vnd.github.v3+json',
-        // Injeta o token apenas se ele existir (útil para desenvolvimento local sem token)
-        ...(token && { Authorization: `Bearer ${token}` }),
-      },
-      // ISR: O Next.js fará o cache do resultado e revalidará a cada 1 hora (3600 segundos)
-      // Isso protege a cota da sua API do GitHub.
+    let res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+      headers,
       next: { revalidate: 3600 },
     });
+
+    // Resiliência contra credenciais inválidas/expiradas:
+    // Se o GitHub recusar o token com 401 (Bad Credentials), tenta de forma anônima para não quebrar a UI
+    if (res.status === 401 && token) {
+      console.warn(`[GitHub API] Token fornecido retornou 401 (Bad credentials). Realizando fallback público para ${owner}/${repo}...`);
+      res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+        headers: {
+          Accept: 'application/vnd.github.v3+json',
+          'User-Agent': 'NIA-Observatorio',
+        },
+        next: { revalidate: 3600 },
+      });
+    }
 
     if (!res.ok) {
       console.error(`Erro ao buscar repo ${owner}/${repo}: Status ${res.status}`);

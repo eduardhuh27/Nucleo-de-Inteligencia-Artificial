@@ -3,8 +3,8 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Metodologia de Coleta e Curadoria | NIA-UFRJ',
-  description: 'Conheça os critérios científicos, rigor metodológico e etapas de curadoria humana do Observatório NIA-UFRJ.',
+  title: 'Metodologia de Coleta e Curadoria | NIA',
+  description: 'Conheça os critérios científicos, rigor metodológico e etapas de curadoria humana do Observatório NIA.',
 };
 
 export default function MetodologiaPage() {
@@ -25,7 +25,7 @@ export default function MetodologiaPage() {
               Metodologia do Observatório
             </h1>
             <p className="text-lg md:text-xl text-[#2C2D41]/80 font-light leading-relaxed">
-              Como o <strong>NIA-UFRJ</strong> coleta, audita, categoriza e disponibiliza informações fidedignas sobre a Inteligência Artificial brasileira para a sociedade, academia e indústria.
+              Como o <strong>NIA</strong> coleta, audita, categoriza e disponibiliza informações fidedignas sobre a Inteligência Artificial brasileira para a sociedade, academia e indústria.
             </p>
           </div>
         </section>
@@ -34,7 +34,7 @@ export default function MetodologiaPage() {
         <section className="mt-12">
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#2C2D41] mb-2">
-              O Ciclo de Vida do Dado no NIA-UFRJ
+              O Ciclo de Vida do Dado no NIA
             </h2>
             <p className="text-base text-[#2C2D41]/70 max-w-2xl font-light">
               Nenhuma entrada é publicada de forma automatizada sem verificação humana e validação acadêmica.

@@ -3,8 +3,8 @@ import { createClient } from '@/lib/supabase/server';
 import { UploadForm } from '@/components/features/acervo/UploadForm';
 
 export const metadata = {
-  title: 'Adicionar Documento | Acervo NIA-UFRJ',
-  description: 'Página de administração para upload de documentos no acervo do NIA-UFRJ.',
+  title: 'Adicionar Documento | Acervo NIA',
+  description: 'Página de administração para upload de documentos no acervo do NIA.',
 };
 
 export default async function NovoDocumentoPage() {
@@ -26,7 +26,7 @@ export default async function NovoDocumentoPage() {
             Administração do Acervo
           </h1>
           <p className="text-lg text-[#2C2D41]/80 max-w-2xl mx-auto font-light leading-relaxed">
-            Utilize este painel para fazer o upload seguro de novos relatórios, teses e guias regulatórios para a biblioteca digital do NIA-UFRJ.
+            Utilize este painel para fazer o upload seguro de novos relatórios, teses e guias regulatórios para a biblioteca digital do NIA.
           </p>
         </div>
 

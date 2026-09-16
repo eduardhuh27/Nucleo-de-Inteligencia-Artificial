@@ -63,7 +63,7 @@ export function CookieConsent() {
               </h3>
               
               <p className="text-sm text-[#2C2D41]/80 leading-relaxed font-light">
-                O NIA-UFRJ utiliza cookies essenciais para o funcionamento do portal e cookies analíticos 
+                O NIA utiliza cookies essenciais para o funcionamento do portal e cookies analíticos 
                 para compreender como você interage com nosso conteúdo. Você pode gerenciar suas preferências. 
                 Leia nossa <a href="/privacidade" className="text-[#2C2D41] font-bold underline hover:text-[#C5ADC5] transition-colors">Política de Privacidade</a>.
               </p>

@@ -3,8 +3,8 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Catálogo de Versões de Layout | NIA-UFRJ',
-  description: 'Explore as diferentes opções de design e conceitos de interface desenvolvidos para o Observatório NIA-UFRJ.',
+  title: 'Catálogo de Versões de Layout | NIA',
+  description: 'Explore as diferentes opções de design e conceitos de interface desenvolvidos para o Observatório NIA.',
 };
 
 export default function VersoesPage() {
@@ -52,7 +52,7 @@ export default function VersoesPage() {
               Versões e Conceitos de Layout
             </h1>
             <p className="text-lg text-[#2C2D41]/80 font-light leading-relaxed">
-              Durante o processo de concepção do portal <strong>NIA-UFRJ</strong>, foram desenvolvidas diferentes propostas visuais e de arquitetura de informação. Aqui você pode navegar por cada uma das versões preservadas.
+              Durante o processo de concepção do portal <strong>NIA</strong>, foram desenvolvidas diferentes propostas visuais e de arquitetura de informação. Aqui você pode navegar por cada uma das versões preservadas.
             </p>
           </div>
         </section>

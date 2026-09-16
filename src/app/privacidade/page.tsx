@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Política de Privacidade | NIA-UFRJ',
+  title: 'Política de Privacidade | NIA',
 };
 
 export default function PrivacidadePage() {
@@ -18,10 +18,6 @@ export default function PrivacidadePage() {
             Última atualização: {new Date().toLocaleDateString('pt-BR')}
           </p>
 
-          {/* 
-            ESTRUTURA OBRIGATÓRIA DA LGPD QUE DEVE SER PREENCHIDA COM O SEU JURÍDICO:
-            - Modificadores do prose injetando nosso Design System
-          */}
           <div className="prose max-w-none 
             prose-headings:font-serif prose-headings:font-bold prose-headings:text-[#2C2D41] prose-headings:mt-8 prose-headings:mb-4
             prose-p:text-[#2C2D41]/80 prose-p:leading-relaxed prose-p:mb-4
@@ -29,7 +25,7 @@ export default function PrivacidadePage() {
             prose-ul:text-[#2C2D41]/80 prose-li:marker:text-[#C5ADC5] prose-ul:mb-6">
             
             <h2>1. Identificação do Controlador</h2>
-            <p>O Núcleo de Inteligência Artificial da UFRJ (NIA-UFRJ) atua como controlador dos dados pessoais coletados neste portal...</p>
+            <p>O Núcleo de Inteligência Artificial (NIA) atua como controlador dos dados pessoais coletados neste portal no âmbito de suas pesquisas e serviços abertos.</p>
 
             <h2>2. Dados Coletados e Finalidade (Minimização)</h2>
             <ul>
@@ -46,13 +42,13 @@ export default function PrivacidadePage() {
             <h2>5. Direitos do Titular (Política de Retratação)</h2>
             <p>De acordo com o Art. 18 da LGPD, você tem o direito de solicitar a qualquer momento:</p>
             <ul>
-              <li>A confirmação e o acesso aos seus dados processados pelo NIA-UFRJ.</li>
+              <li>A confirmação e o acesso aos seus dados processados pelo NIA.</li>
               <li>A correção de dados incompletos ou desatualizados.</li>
               <li>A <strong>revogação do consentimento</strong> e a <strong>exclusão dos dados</strong> fornecidos (ex: solicitar a remoção de um documento submetido do Acervo).</li>
             </ul>
 
             <h2>6. Contato do Encarregado de Dados (DPO)</h2>
-            <p>Para exercer seus direitos de retratação ou tirar dúvidas sobre esta política, entre em contato através do e-mail: <strong>dpo@nia.ufrj.br</strong>.</p>
+            <p>Para exercer seus direitos de retratação ou tirar dúvidas sobre esta política, entre em contato através do e-mail: <strong>dpo@nia.org.br</strong>.</p>
           </div>
           <div className="mb-4">
             <a href="/" className="text-[#B2B5E0] hover:text-[#2C2D41] font-semibold text-sm transition-colors flex items-center gap-2">

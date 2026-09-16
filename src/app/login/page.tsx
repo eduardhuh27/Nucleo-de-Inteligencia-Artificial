@@ -42,7 +42,7 @@ export default function LoginPage() {
               name="email"
               required
               className="w-full px-4 py-3 bg-[#F8F9FA] border border-[#B2B5E0]/50 rounded-xl focus:ring-2 focus:ring-[#C5ADC5] focus:border-[#C5ADC5] outline-none transition-all text-[#2C2D41] placeholder:text-[#2C2D41]/40"
-              placeholder="admin@nia.ufrj.br"
+              placeholder="admin@nia.org.br"
             />
           </div>
 

@@ -35,7 +35,7 @@ export default function ColaborarPage() {
           </h1>
           <p className="mt-4 text-lg md:text-xl text-[#2C2D41]/80 max-w-2xl mx-auto font-light leading-relaxed">
             Submeta projetos, artigos acadêmicos ou repositórios abertos. 
-            Todas as submissões passam por uma curadoria da equipe NIA-UFRJ antes da publicação.
+            Todas as submissões passam por uma curadoria da equipe NIA antes da publicação.
           </p>
         </div>
 

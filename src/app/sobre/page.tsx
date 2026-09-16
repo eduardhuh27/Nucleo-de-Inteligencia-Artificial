@@ -3,8 +3,8 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sobre o Projeto | NIA-UFRJ',
-  description: 'Conheça o Núcleo de Inteligência Artificial da UFRJ: vínculo institucional, metodologia de coleta de dados e equipe.',
+  title: 'Sobre o Projeto | NIA',
+  description: 'Conheça o Núcleo de Inteligência Artificial: compromisso público, metodologia de coleta de dados e equipe.',
 };
 
 export default function SobrePage() {
@@ -23,10 +23,10 @@ export default function SobrePage() {
                 <span>Iniciativa Acadêmica Institucional</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-serif font-bold text-[#2C2D41] leading-tight mb-6">
-                Núcleo de Inteligência Artificial da UFRJ
+                Núcleo de Inteligência Artificial
               </h1>
               <p className="text-lg md:text-xl text-[#2C2D41]/80 font-light leading-relaxed">
-                O <strong>NIA-UFRJ</strong> é a referência aberta e institucional sobre adoção, dados e código de Inteligência Artificial no Brasil, conectando a vanguarda da pesquisa científica universitária, as demandas do setor público e o dinamismo do setor produtivo sob o selo de credibilidade da <strong>Universidade Federal do Rio de Janeiro</strong>.
+                O <strong>NIA</strong> é a referência aberta e institucional sobre adoção, dados e código de Inteligência Artificial no Brasil, conectando a vanguarda da pesquisa científica universitária, as demandas do setor público e o dinamismo do setor produtivo sob rigor metodológico e transparência.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ export default function SobrePage() {
                 n
               </div>
               <span className="text-xs font-bold tracking-widest text-[#2C2D41]/60 uppercase">
-                Selo UFRJ
+                Observatório IA
               </span>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function SobrePage() {
             <div className="bg-white p-8 rounded-3xl border border-[#B2B5E0]/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-[#C5ADC5]/20 text-[#2C2D41] flex items-center justify-center text-2xl mb-6 shadow-xs">
-                  
+                  📊
                 </div>
                 <h3 className="text-xl font-serif font-bold text-[#2C2D41] mb-3">
                   Ciência Aberta & Dados Citáveis
@@ -75,7 +75,7 @@ export default function SobrePage() {
             <div className="bg-white p-8 rounded-3xl border border-[#B2B5E0]/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-[#C5ADC5]/20 text-[#2C2D41] flex items-center justify-center text-2xl mb-6 shadow-xs">
-                  
+                  ⚖️
                 </div>
                 <h3 className="text-xl font-serif font-bold text-[#2C2D41] mb-3">
                   Ética e Impacto Social
@@ -89,7 +89,7 @@ export default function SobrePage() {
             <div className="bg-white p-8 rounded-3xl border border-[#B2B5E0]/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-[#C5ADC5]/20 text-[#2C2D41] flex items-center justify-center text-2xl mb-6 shadow-xs">
-                  
+                  🌐
                 </div>
                 <h3 className="text-xl font-serif font-bold text-[#2C2D41] mb-3">
                   Conexão Tripla Hélice
@@ -146,7 +146,7 @@ export default function SobrePage() {
               </span>
               <h4 className="font-bold text-lg text-[#2C2D41] mb-2">Revisão por Pares & Curadoria Humana</h4>
               <p className="text-sm text-[#2C2D41]/80 leading-relaxed font-light">
-                Nenhum dado é publicado automaticamente sem auditoria prévia. Pesquisadores da UFRJ validam os links, analisam a relevância técnica e sintetizam os quatro blocos essenciais: Destaques, Observações, Achados e Conclusões.
+                Nenhum dado é publicado automaticamente sem auditoria prévia. Pesquisadores e especialistas validam os links, analisam a relevância técnica e sintetizam os quatro blocos essenciais: Destaques, Observações, Achados e Conclusões.
               </p>
             </div>
 
@@ -167,10 +167,10 @@ export default function SobrePage() {
         <section className="mt-14">
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#2C2D41] mb-2">
-              Equipe e Vínculo Acadêmico
+              Equipe e Governança
             </h2>
             <p className="text-base text-[#2C2D41]/70 max-w-2xl font-light">
-              O projeto congrega pesquisadores, docentes e discentes de programas de graduação e pós-graduação da UFRJ.
+              O projeto congrega pesquisadores, docentes e especialistas dedicados ao avanço ético e transparente da tecnologia.
             </p>
           </div>
 
@@ -180,10 +180,10 @@ export default function SobrePage() {
                 Interdisciplinaridade e Excelência
               </h3>
               <p className="text-[#2C2D41]/80 text-sm leading-relaxed font-light mb-4">
-                A iniciativa conta com a participação de membros vinculados ao Instituto de Computação (IC), COPPE/UFRJ, Núcleo de Computação Eletrônica (NCE) e faculdades parceiras nas áreas de Ciências Humanas, Sociais Aplicadas e Direito.
+                A iniciativa conta com a colaboração de pesquisadores nas áreas de Ciência da Computação, Engenharia de Sistemas, Ciências Humanas, Sociais Aplicadas e Direito Digital.
               </p>
               <p className="text-xs font-bold uppercase tracking-wider text-[#2C2D41]/80">
-                Universidade Federal do Rio de Janeiro • Cidade Universitária, Ilha do Fundão
+                Observatório de Inteligência Artificial • Brasil
               </p>
             </div>
 

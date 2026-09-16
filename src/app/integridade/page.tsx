@@ -3,7 +3,7 @@ import path from 'path';
 import ReactMarkdown from 'react-markdown';
 
 export const metadata = {
-  title: 'Diretrizes de Integridade de Conteúdo | NIA-UFRJ',
+  title: 'Diretrizes de Integridade de Conteúdo | NIA',
   description: 'Regras técnicas e processuais para a manutenção da legalidade e transparência do portal.',
 };
 

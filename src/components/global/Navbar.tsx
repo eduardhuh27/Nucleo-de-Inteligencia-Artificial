@@ -30,7 +30,7 @@ export function Navbar() {
           <Link 
             href="/" 
             className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5ADC5] rounded-xl p-1 transition-shadow"
-            aria-label="Voltar para a página inicial do NIA-UFRJ"
+            aria-label="Voltar para a página inicial do NIA"
           >
             <div 
               className="w-12 h-12 bg-[#B2B5E0] flex items-center justify-center text-[#2C2D41] font-serif font-bold text-2xl shadow-sm clip-hexagon"
@@ -40,7 +40,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-black text-[#2C2D41] tracking-tight leading-none">
-                NIA<span className="text-[#C5ADC5]">-UFRJ</span>
+                NIA
               </span>
               <span className="text-[10px] font-bold uppercase tracking-widest text-[#B2B5E0] mt-0.5">
                 Inteligência Artificial

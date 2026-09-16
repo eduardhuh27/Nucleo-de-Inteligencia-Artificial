@@ -15,7 +15,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-black text-[#2C2D41] tracking-tight leading-none">
-                NIA<span className="text-[#C5ADC5]">-UFRJ</span>
+                NIA
               </span>
               <span className="text-[10px] font-bold uppercase tracking-widest text-[#B2B5E0]">
                 Inteligência Artificial
@@ -31,7 +31,7 @@ export default function Home() {
               </svg>
             </button>
             <div className="hidden sm:block px-4 py-1 border-2 border-[#C5ADC5] rounded-full">
-              <span className="text-sm font-black text-[#2C2D41] tracking-tight">UFRJ</span>
+              <span className="text-sm font-black text-[#2C2D41] tracking-tight">NIA</span>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Home() {
       <section className="w-full py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-serif font-bold text-[#2C2D41] mb-8 leading-tight">
-            Núcleo de Inteligência Artificial <br/> da Universidade Federal do Rio de Janeiro
+            Núcleo de Inteligência Artificial <br/> do Brasil
           </h1>
           <p className="text-lg md:text-xl text-[#2C2D41]/80 leading-relaxed font-light">
             Nosso propósito é mapear, registrar e prover informações abertas sobre os avanços das tecnologias habilitadoras da <strong>IA</strong>, desenvolvendo análises críticas sobre a sua adoção e os seus principais impactos no tecido social brasileiro.

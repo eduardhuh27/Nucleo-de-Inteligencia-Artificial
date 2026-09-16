@@ -36,12 +36,12 @@ export async function generateMetadata(props: {
 
   if (!doc) {
     return {
-      title: 'Documento não encontrado | Acervo NIA-UFRJ',
+      title: 'Documento não encontrado | Acervo NIA',
     };
   }
 
   return {
-    title: `${doc.titulo} | Acervo NIA-UFRJ`,
+    title: `${doc.titulo} | Acervo NIA`,
     description: `Análise estruturada e síntese técnica do documento "${doc.titulo}", de autoria de ${doc.autor}.`,
   };
 }
@@ -170,7 +170,7 @@ export default async function DetalhesDocumentoPage(props: {
               </h2>
             </div>
             <p className="text-[#2C2D41]/70 max-w-3xl text-base">
-              Quadro analítico padronizado desenvolvido pela equipe do NIA-UFRJ com base nas diretrizes do Observatório de IA, sintetizando os pontos essenciais do documento para pesquisadores, gestores públicos e a sociedade.
+              Quadro analítico padronizado desenvolvido pela equipe do NIA com base nas diretrizes do Observatório de IA, sintetizando os pontos essenciais do documento para pesquisadores, gestores públicos e a sociedade.
             </p>
           </div>
 
@@ -264,7 +264,7 @@ export default async function DetalhesDocumentoPage(props: {
                 Síntese Técnica em Processamento
               </h3>
               <p className="text-[#2C2D41]/70 max-w-lg mx-auto text-base mb-6 font-light leading-relaxed">
-                Este material já está indexado e disponível para download integral. A síntese padronizada em quatro blocos (Destaques, Observações, Achados e Conclusões) está sendo elaborada pela equipe de curadoria do NIA-UFRJ.
+                Este material já está indexado e disponível para download integral. A síntese padronizada em quatro blocos (Destaques, Observações, Achados e Conclusões) está sendo elaborada pela equipe de curadoria do NIA.
               </p>
               <a
                 href={doc.url_arquivo}
